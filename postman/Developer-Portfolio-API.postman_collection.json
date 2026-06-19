@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "Developer Portfolio API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://127.0.0.1:8000"},
+    {"key": "metricsKey", "value": "local-metrics-key-change-before-deploy"}
+  ],
+  "item": [
+    {
+      "name": "Contact",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Анна Смирнова\",\n  \"phone\": \"+7 (999) 123-45-67\",\n  \"email\": \"anna@example.com\",\n  \"comment\": \"Нужен API для нового проекта. Хотим обсудить архитектуру и сроки.\"\n}"
+        },
+        "url": "{{baseUrl}}/api/contact"
+      }
+    },
+    {"name": "Health", "request": {"method": "GET", "url": "{{baseUrl}}/api/health"}},
+    {
+      "name": "Metrics",
+      "request": {
+        "method": "GET",
+        "header": [{"key": "X-Metrics-Key", "value": "{{metricsKey}}"}],
+        "url": "{{baseUrl}}/api/metrics"
+      }
+    }
+  ]
+}

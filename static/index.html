@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Артур Габзалилов — Python backend-разработчик. FastAPI, PostgreSQL, AI/LLM-интеграции и высоконагруженные API.">
+    <title>Артур Габзалилов — Python Backend Developer</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="nav shell">
+      <a class="brand" href="#top" aria-label="На главную"><span>AG</span> / backend</a>
+      <nav aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#work">Проекты</a>
+        <a class="nav-cta" href="#contact">Обсудить задачу</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Открыт к новым проектам</p>
+          <h1>Создаю backend<br>для продуктов с <em>AI</em><br>и сложной логикой.</h1>
+          <p class="hero-lead">
+            Я Артур, Python backend-разработчик с опытом более трёх лет. Проектирую API,
+            real-time-сервисы и RAG-пайплайны — от бизнес-логики до надёжной эксплуатации.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Написать мне <span>↗</span></a>
+            <a class="text-link" href="/docs">Swagger API <span>→</span></a>
+          </div>
+        </div>
+        <aside class="terminal" aria-label="Сведения о разработчике">
+          <div class="terminal-head"><i></i><i></i><i></i><span>profile.py</span></div>
+          <pre><code><b>class</b> <strong>BackendDeveloper</strong>:
+  name = <q>Артур Габзалилов</q>
+  experience = <q>3+ years</q>
+  stack = [
+    <q>Python</q>, <q>FastAPI</q>,
+    <q>PostgreSQL</q>, <q>Redis</q>
+  ]
+
+  <b>def</b> <strong>focus</strong>(self):
+    <b>return</b> {
+      <q>api</q>: <span>True</span>,
+      <q>ai_integrations</q>: <span>True</span>,
+      <q>reliability</q>: <span>True</span>
+    }</code></pre>
+          <div class="terminal-foot"><span>Python / FastAPI</span><span>Москва</span></div>
+        </aside>
+      </section>
+
+      <section class="ticker" aria-label="Технологии">
+        <div>Python <span>✦</span> FastAPI <span>✦</span> PostgreSQL <span>✦</span> Redis <span>✦</span> Celery <span>✦</span> RabbitMQ <span>✦</span> Docker <span>✦</span> LangChain</div>
+      </section>
+
+      <section class="about shell section" id="about">
+        <div>
+          <p class="eyebrow">01 / Обо мне</p>
+          <h2>От API-контракта<br>до стабильного <em>production.</em></h2>
+        </div>
+        <div class="about-text">
+          <p>С февраля 2023 года разрабатываю backend-сервисы на Python. Работал в командах над AI-ассистентом и образовательной LMS: проектировал API, интегрировал LLM, реализовывал поиск по векторной базе и real-time-функции.</p>
+          <p>Уделяю внимание обработке ошибок, тестам, логированию и отказоустойчивости внешних интеграций. В 2024 году окончил СПбГЭТУ «ЛЭТИ» по направлению «Информационные технологии».</p>
+        </div>
+      </section>
+
+      <section class="work shell section" id="work">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / Избранные проекты</p><h2>Практический опыт</h2></div>
+          <span>2023—2026</span>
+        </div>
+        <div class="project-grid">
+          <article class="project project-dark">
+            <p class="project-number">01</p>
+            <div>
+              <p class="project-tag">AI / RAG / Telegram</p>
+              <h3>Digital Guru</h3>
+              <p>Backend AI-ассистента: embeddings, semantic search в ChromaDB, сбор контекста для LLM и ответы со ссылками на исходные материалы.</p>
+            </div>
+            <ul><li>FastAPI</li><li>Aiogram</li><li>ChromaDB</li><li>LangChain</li></ul>
+          </article>
+          <article class="project project-lime">
+            <p class="project-number">02</p>
+            <div>
+              <p class="project-tag">EdTech / LMS</p>
+              <h3>Lingoline</h3>
+              <p>API образовательной платформы для сайта, приложения и админ-панели: роли, занятия, расписание, WebSocket-чаты и Jitsi-встречи с JWT-доступом.</p>
+            </div>
+            <ul><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li><li>WebSocket</li></ul>
+          </article>
+          <article class="project project-paper">
+            <p class="project-number">03</p>
+            <div>
+              <p class="project-tag">Backend / AI integration</p>
+              <h3>Portfolio API</h3>
+              <p>Сервис обработки обращений с валидацией, rate limiting, email-уведомлениями, метриками и AI-классификацией с graceful fallback.</p>
+            </div>
+            <ul><li>FastAPI</li><li>DeepSeek</li><li>SQLite</li><li>Pytest</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="shell contact-layout">
+          <div class="contact-copy">
+            <p class="eyebrow">03 / Контакт</p>
+            <h2>Есть задача?<br><em>Давайте обсудим.</em></h2>
+            <p>Опишите контекст — AI-помощник классифицирует обращение, а я получу структурированную выжимку.</p>
+            <div class="api-state"><span class="status-dot"></span><span><b>API работает</b><small>Проверяется в реальном времени</small></span></div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field-row">
+              <label>Имя <input name="name" autocomplete="name" minlength="2" maxlength="100" required placeholder="Как к вам обращаться?"></label>
+              <label>Телефон <input name="phone" autocomplete="tel" minlength="7" maxlength="30" required placeholder="+7 999 123-45-67"></label>
+            </div>
+            <label>Email <input name="email" type="email" autocomplete="email" required placeholder="you@company.ru"></label>
+            <label>Комментарий <textarea name="comment" minlength="10" maxlength="2000" required rows="5" placeholder="Расскажите о задаче, сроках и текущем контексте..."></textarea><span class="counter"><b id="comment-count">0</b> / 2000</span></label>
+            <button class="button submit" type="submit"><span>Отправить обращение</span><i>↗</i></button>
+            <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку данных.</p>
+            <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell footer">
+      <a class="brand" href="#top"><span>AG</span> / backend</a>
+      <p>© 2026 Артур Габзалилов. Сделано с вниманием к деталям.</p>
+      <div>
+        <a href="/docs">API Docs</a>
+        <a href="mailto:arturgabzalil@gmail.com">Email</a>
+        <a href="https://t.me/bxbyboi" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </div>
+    </footer>
+  </body>
+</html>
